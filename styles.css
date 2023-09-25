@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    --blue:#4f7df3;
+    --pale-blue: #c2d3ff;
+    --light-red: #ff5263;
+    --gray: #969696;
+    --very-dark-blue:#151f29;
+
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+
+    /* overflow: hidden; */
+    font-family: 'Libre Franklin', sans-serif;
+ }
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: var(--gray);
+    margin: 0;
+}
+
+h1 span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+
+header p{
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--very-dark-blue);
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+input{
+    width: 70vw;
+    height: 2.5rem;
+    border: solid var(--pale-blue);
+    border-radius: 2rem;
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--pale-blue);
+    opacity: 0.8;
+    margin-left: 1rem;
+}
+
+
+.email{
+    padding-left: 2rem;
+}
+
+.submit{
+    width: 80vw;
+    height: 3rem;
+    background-color: var(--blue);
+    border: var(--blue);
+    color: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(131, 131, 131, 0.452)
+}
+
+.illustration{
+    margin-bottom: 5vh;
+    width: 80vw;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--gray);
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon{
+    fill: var(--blue);
+    width: 1rem;
+}
+
+.icon:hover{
+    fill: white;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: solid 2px var(--pale-blue);
+}
+.links a:hover{
+    background-color: var(--blue);
+    border: solid 2px var(--blue);
+}
+
+
+
+@media only screen and (min-width:480px) {
+    .logo{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .email{
+        width: 20vw;
+    }
+
+    .submit{
+        width: 10vw;
+    }
+
+    .illustration{
+        width: auto;
+        height: 40vh;
+    }
+}
+
+
+
